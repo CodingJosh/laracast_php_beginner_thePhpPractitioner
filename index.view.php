@@ -12,9 +12,15 @@
     </style>
 </head>
 <body>
+	<h1>Task for the day</h1>
+
 	<ul>
-		<?php foreach ($person as $key => $featuer) : ?>
-			<li><strong><?= $key; ?></strong>: <?= $featuer; ?></li>
+		<?php foreach ($task as $key => $value) : ?>
+			<?php if($key != 'completed') : ?>
+				<li><strong><?= ucwords($key); ?></strong>: <?= $value; ?></li>
+			<?php else : ?>
+				<li><strong><?= ucwords($key); ?></strong>: <?= $value ? 'Complete' : 'Incomplete'; ?></li>
+			<?php endif; ?>
 		<?php endforeach; ?>
 	</ul>
 </body>

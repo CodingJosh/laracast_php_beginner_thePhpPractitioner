@@ -1,11 +1,10 @@
 <?php
 
-$person = [
-    'age' => 28,
-    'hair' => 'brown',
-    'career' => 'support & qa engineer'
+$task = [
+    'title' => 'finish homework',
+    'due' => 'today',
+    'assigned_to' => 'Joshua',
+    'completed' => true
 ];
-
-$person['name'] = 'Joshua';
 
 require 'index.view.php';
