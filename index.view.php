@@ -13,8 +13,8 @@
 </head>
 <body>
 	<ul>
-		<?php foreach ($names as $name) : ?>
-			<li><?= $name; ?></li>
+		<?php foreach ($person as $key => $featuer) : ?>
+			<li><strong><?= $key; ?></strong>: <?= $featuer; ?></li>
 		<?php endforeach; ?>
 	</ul>
 </body>
