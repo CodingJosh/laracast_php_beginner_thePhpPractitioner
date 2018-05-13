@@ -1,10 +1,14 @@
 <?php
 
-$task = [
-    'title' => 'finish homework',
-    'due' => 'today',
-    'assigned_to' => 'Joshua',
-    'completed' => true
-];
+require 'functions.php';
+
+if(ageConfirmation($_GET['age'])){
+    echo 'You are old enough.';
+}
+else {
+    echo 'You are not old enough.';
+}
+
+die();
 
 require 'index.view.php';
