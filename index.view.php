@@ -19,7 +19,7 @@
 			<?php if($key != 'completed') : ?>
 				<li><strong><?= ucwords($key); ?></strong>: <?= $value; ?></li>
 			<?php else : ?>
-				<li><strong><?= ucwords($key); ?></strong>: <?= $value ? 'Complete' : 'Incomplete'; ?></li>
+				<li><strong><?= ucwords($key); ?></strong>: <?= $value ? '&#9989;' : '&#10060;'; ?></li>
 			<?php endif; ?>
 		<?php endforeach; ?>
 	</ul>
